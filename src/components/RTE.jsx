@@ -18,11 +18,12 @@ export default function RTE({ name, control, label, defaultValue = "" }) {
         control={control}
         render={({ field: { onChange } }) => (
           <Editor
-            apiKey= {tinyApi}
+            apiKey={tinyApi}
             initialValue={defaultValue}
             init={{
               height: 500,
               menubar: true,
+
               plugins: [
                 'advlist',
                 'autolink',
@@ -42,11 +43,15 @@ export default function RTE({ name, control, label, defaultValue = "" }) {
                 'help',
                 'wordcount'
               ],
+
               toolbar:
                 'undo redo | blocks | ' +
                 'bold italic forecolor | alignleft aligncenter ' +
                 'alignright alignjustify | bullist numlist outdent indent | ' +
                 'removeformat | help',
+
+              block_formats:
+                'Paragraph=p; Heading 1=h1; Heading 2=h2; Heading 3=h3',
             }}
             onEditorChange={onChange}
           />
