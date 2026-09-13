@@ -3,7 +3,7 @@ import { defineConfig } from 'vite'
 import tailwindcss from '@tailwindcss/vite'
 
 export default defineConfig({
-  base: '/WriteHub/',
+  base: '/writehub/',
   plugins: [
     react(),
     tailwindcss(),
