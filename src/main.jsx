@@ -67,7 +67,9 @@ const router = createBrowserRouter([
         },
     ]
   }
-])
+],{
+  basename: '/WriteHub',
+})
 
 ReactDOM.createRoot(document.getElementById('root')).render(
   <Provider store={store}>
