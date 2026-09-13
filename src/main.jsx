@@ -68,7 +68,7 @@ const router = createBrowserRouter([
         ]
     }
 ], {
-    base: '/writehub/',
+    basename: '/writehub',
 })
 
 ReactDOM.createRoot(document.getElementById('root')).render(
