@@ -1,0 +1,3 @@
+const tinyApi= 'ns5jlqeljjglyj44vr6jfwy5344ldx7zh4eran5fcbia2032'
+
+export default tinyApi
